@@ -75,11 +75,12 @@ This table enables revenue analysis and monetization metrics.
 
 The project uses tools commonly applied in modern data analytics workflows.
 
-Python – synthetic dataset generation
-PostgreSQL – data storage and SQL transformations
-SQL – behavioral data modeling and aggregation
-Power BI – interactive dashboard and visualization
-DAX – business metric calculations
+- Python – synthetic dataset generation
+- PostgreSQL – data storage and SQL transformations
+- SQL – behavioral data modeling and aggregation
+- DAX – business metric calculations
+- Power BI – interactive dashboard and visualization
+
 
 ## Data Pipeline
 
