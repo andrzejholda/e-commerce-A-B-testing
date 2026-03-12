@@ -162,15 +162,15 @@ This allows dynamic filtering using slicers such as:
 
 ## Architecture Diagram 
 
-                                        CSV Data (Python Faker)
+                                              CSV Data (Python Faker)
+                                                         ↓
+                                                PostgreSQL Database
+                                                         ↓
+                                                 SQL View,Indexes
+                                                         ↓
+                                       Power BI Semantic Layer (DAX Measures)
                                                    ↓
-                                          PostgreSQL Database
-                                                   ↓
-                                           SQL View,Indexes
-                                                   ↓
-                                 Power BI Semantic Layer (DAX Measures)
-                                                   ↓
-                                Interactive Dashboards & Business Insights
+                                      Interactive Dashboards & Business Insights
 
 
 
