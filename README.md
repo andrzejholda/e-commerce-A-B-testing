@@ -169,7 +169,7 @@ This allows dynamic filtering using slicers such as:
                                                  SQL View,Indexes
                                                          ↓
                                        Power BI Semantic Layer (DAX Measures)
-                                                   ↓
+                                                         ↓
                                       Interactive Dashboards & Business Insights
 
 
