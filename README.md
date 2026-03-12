@@ -104,9 +104,9 @@ Main tables:
 Indexes were created to improve query performance.
 
 Example:
-1.CREATE INDEX idx_events_user_id ON events(user_id);
-2.CREATE INDEX idx_events_date ON events(event_date);
-3.CREATE INDEX idx_purchases_user_id ON purchases(user_id);
+###### 1.CREATE INDEX idx_events_user_id ON events(user_id);
+###### 2.CREATE INDEX idx_events_date ON events(event_date);
+###### 3.CREATE INDEX idx_purchases_user_id ON purchases(user_id);
 
 #### 3. SQL Data Transformation
 
