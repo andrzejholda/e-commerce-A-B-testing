@@ -302,11 +302,11 @@ The project delivers a comprehensive product analytics framework that supports b
 
 ### This SQL architecture demonstrates:
 
-✔ layered analytical design
-✔ controlled granularity
-✔ clear data lineage
-✔ product funnel modeling
-✔ lifecycle retention analysis
-✔ experimentation analytics
+- ✔ layered analytical design
+- ✔ controlled granularity
+- ✔ clear data lineage
+- ✔ product funnel modeling
+- ✔ lifecycle retention analysis
+- ✔ experimentation analytics
 
 These practices reflect real-world product analytics workflows used in technology companies.
