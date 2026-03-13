@@ -10,9 +10,9 @@ This project follows a layered SQL transformation approach designed to ensure:
 The SQL layer transforms raw product interaction data into structured analytical datasets used in the Power BI product analytics dashboard.
 
 The SQL architecture is divided into three complementary analytical models:
-1️⃣ Product Funnel & Conversion Model
-2️⃣ Cohort Retention & Lifecycle Model
-3️⃣ Experimentation (A/B Testing) Model
+- 1️⃣ Product Funnel & Conversion Model
+- 2️⃣ Cohort Retention & Lifecycle Model
+- 3️⃣ Experimentation (A/B Testing) Model
 
 Each model supports a different aspect of product analytics and business decision-making.
 
