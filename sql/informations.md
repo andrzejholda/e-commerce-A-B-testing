@@ -1,4 +1,4 @@
-## SQL Architecture Overview
+# SQL Architecture Overview
 
 This project follows a layered SQL transformation approach designed to ensure:
 - clear data lineage
@@ -16,7 +16,9 @@ The SQL architecture is divided into three complementary analytical models:
 
 Each model supports a different aspect of product analytics and business decision-making.
 
-## 1️⃣ Product Funnel & Conversion Model
+---
+
+# 1️⃣ Product Funnel & Conversion Model
 ### Objective
 Analyze user behavior across the product funnel and identify where users drop off before completing a purchase.
 
@@ -78,8 +80,10 @@ This structure enables:
 - funnel conversion analysis
 - behavioral segmentation
 - experiment impact analysis
+  
+---
 
-## 2️⃣ Monetization Metrics Model
+# 2️⃣ Monetization Metrics Model
 ### Objective
 
 Quantify revenue generation and connect user behavior with monetization outcomes.
@@ -130,8 +134,10 @@ This dataset powers:
 - revenue segmentation dashboards
 - geographic performance comparisons
 - device-level performance analysis
+  
+---
 
-## 3️⃣ Cohort & Lifecycle Retention Model
+# 3️⃣ Cohort & Lifecycle Retention Model
 ### Objective
 
 Analyze long-term user engagement by tracking how user activity evolves after registration.
@@ -221,8 +227,10 @@ It enables analysis of:
 - retention curves
 - long-term engagement
 - product stickiness
+  
+---
 
-## 4️⃣ Experimentation (A/B Testing) Model
+# 4️⃣ Experimentation (A/B Testing) Model
 ### Objective
 
 Evaluate the impact of product changes using controlled A/B experimentation.
@@ -275,6 +283,8 @@ This dataset enables calculation of:
 - conversion uplift
 - estimated revenue impact
 
+---
+
 ## Analytical Value of the Combined Model
 
 By combining:
@@ -285,6 +295,8 @@ By combining:
 The project delivers a comprehensive product analytics framework that supports both:
 - short-term conversion optimization
 - long-term user engagement strategy
+
+---
 
 ## Architecture Strengths
 
