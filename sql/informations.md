@@ -39,7 +39,7 @@ This layer aggregates product interaction events at the daily level to measure h
 Output
 - funnel_events
 
-Grain
+Grain: 
 One row per:
 event_type per day
 
@@ -62,7 +62,7 @@ This enables accurate conversion rate calculations between funnel steps.
 Output
 - user_funnel
 
-Grain
+Grain: 
 One row per user
 
 Key Logic
@@ -90,14 +90,14 @@ This model supports:
 - monetization comparison across experiment variants
 
 #### 01_user_revenue.sql — Revenue Aggregation Layer
-#####Purpose
+##### Purpose
 
 Aggregate purchase transactions at the user level to calculate revenue metrics.
 
 Output
 - revenue_user
 
-Grain
+Grain: 
 One row per user
 
 Key Logic
@@ -154,8 +154,9 @@ Grain
 One row per user
 
 Key Logic
+
 Defines:
-cohort_month = DATE_TRUNC('month', registration_date)
+- cohort_month = DATE_TRUNC('month', registration_date)
 
 This establishes the starting point of the user lifecycle.
 
@@ -192,9 +193,9 @@ cohort_age = months between activity_month and cohort_month
 
 Example:
 
-M0 → registration month
-M1 → first month after registration
-M2 → second month after registration
+- M0 → registration month
+- M1 → first month after registration
+- M2 → second month after registration
 
 This enables lifecycle-based retention analysis.
 
