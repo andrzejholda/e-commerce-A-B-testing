@@ -1,0 +1,54 @@
+Users App Open
+  Users App Open =
+CALCULATE(
+DISTINCTCOUNT(events[user_id]),
+events[event_type] = "app_open"
+)
+
+Users View Product
+  Users View Product =
+CALCULATE(
+DISTINCTCOUNT(events[user_id]),
+events[event_type] = "view_product"
+)
+
+Users Add To Cart
+  Users Add To Cart =
+CALCULATE(
+DISTINCTCOUNT(events[user_id]),
+events[event_type] = "add_to_cart"
+)
+
+Users Purchases
+  Users Purchase =
+CALCULATE(
+DISTINCTCOUNT(events[user_id]),
+events[event_type] = "purchase"
+)
+
+Conversion Cart -> View
+  CR View to Cart =
+DIVIDE(
+[Users Add To Cart],
+[Users View Product]
+)
+
+Conversion Cart -> Purchases
+  CR Cart to Purchase =
+DIVIDE(
+[Users Purchase],
+[Users Add To Cart]
+)
+
+Overall Conversion Funnel
+  Overall Conversion =
+DIVIDE(
+[Users Purchase],
+[Users View Product]
+)
+
+Drop Off Rate
+  Drop-off Rate Cart =
+1 - [CR View to Cart]
+  Drop-off Rate Purchase =
+1 - [CR Cart to Purchase]
