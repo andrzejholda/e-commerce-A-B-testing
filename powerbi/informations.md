@@ -78,16 +78,13 @@ Does the experiment lead to increased revenue per user?
 What is the estimated financial impact of deploying the better variant?
 Are experiment results consistent across devices or countries?
 
-Dashboard Analytical Value
+### Dashboard Analytical Value
 
 The dashboard combines several product analytics techniques to provide a comprehensive understanding of product performance:
 
 - Product KPI monitoring
-
-Funnel conversion analysis
-
-Cohort-based retention tracking
-
-Experiment-driven product optimization
+- Funnel conversion analysis
+- Cohort-based retention tracking
+- Experiment-driven product optimization
 
 Together, these analyses support data-driven product decisions aimed at improving conversion, retention, and revenue growth.
