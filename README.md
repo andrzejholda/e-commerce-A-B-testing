@@ -213,10 +213,11 @@ e-commerce-A-B-testing/
 │   └── informations.md              ← SQL logic explained
 │
 ├── dax/
-│   ├── 01_churn_measures.dax
-│   ├── 02_revenue_measures.dax
-│   ├── 03_cohort_measure.dax
-│   ├── 04_campaign_simulation.dax
+│   ├── 01_product_overwiev.dax
+│   ├── 02_funnel_analysis.png
+│   ├── 03_user_retention_cohort_analysis.png
+│   ├── 04_ab_test_analysis.png
+│   ├── 05_business_insights.png
 │   └── informations.md              ← DAX measures explained
 │
 ├── powerbi/
