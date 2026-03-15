@@ -133,8 +133,8 @@ The DAX layer enables dynamic business metrics that respond to dashboard filters
 
 Together with the SQL transformation layer, the DAX measures support:
 
-✔ interactive analysis
-✔ real-time KPI recalculation
-✔ product funnel evaluation
-✔ cohort lifecycle tracking
-✔ experiment performance measurement
+- ✔ interactive analysis
+- ✔ real-time KPI recalculation
+- ✔ product funnel evaluation
+- ✔ cohort lifecycle tracking
+- ✔ experiment performance measurement
