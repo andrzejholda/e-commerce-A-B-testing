@@ -1,29 +1,29 @@
-Total User 
+- Total User 
   Users =
 DISTINCTCOUNT(users[user_id])
 
-Total Revenue
+- Total Revenue
   Revenue =
 SUM(purchases[revenue])
 
-Total purchases
+- Total purchases
   Purchases =
 COUNT(purchases[purchase_id])
 
-ARPU
+- ARPU
   ARPU =
 DIVIDE(
 [Revenue],
 [Users]
 )
 
-ARPPU
+- ARPPU
   ARPPU =
 DIVIDE(
 [Revenue],
 DISTINCTCOUNT(purchases[user_id])
 )
 
-Revenue Trend
+- Revenue Trend
   Revenue Trend =
 SUM(purchases[revenue])
