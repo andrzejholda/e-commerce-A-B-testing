@@ -94,6 +94,10 @@ Measures included:
 - Revenue Variant
 - Conversion Rate
 - Conversion Uplift %
+- Revenue A
+- Revenue B
+- ARPU A
+- ARPU B
 - Revenue Uplift %
 - Estimated Revenue Impact
 
