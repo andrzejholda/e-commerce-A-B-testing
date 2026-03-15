@@ -1,0 +1,79 @@
+- User A
+  Users A = 
+CALCULATE(
+DISTINCTCOUNT('public users'[user_id]),
+'public users'[ab_variant]= "A"
+)
+
+- User B
+  Users B = 
+CALCULATE(
+DISTINCTCOUNT('public users'[user_id]),
+'public users'[ab_variant]= "B"
+)
+
+- Conversion
+  Conversion A = 
+CALCULATE(
+[Conversion Rate],
+'public users'[ab_variant]= "A"
+)
+  Conversion B = 
+CALCULATE(
+[Conversion Rate],
+'public users'[ab_variant]= "B"
+)
+
+- Uplift
+  Uplift = 
+DIVIDE(
+[Conversion B] - [Conversion A],
+[Conversion A]
+)
+
+- Conversion Uplift %
+  Conversion Uplift = 
+[Conversion B] - [Conversion A]
+
+- Revenue
+  Revenue A = 
+CALCULATE(
+    SUM('public purchases'[revenue]),
+    'public users'[ab_variant] = "A" )
+  Revenue B = 
+CALCULATE(
+    SUM('public purchases'[revenue]),
+    'public users'[ab_variant] = "B" )
+
+- ARPU
+  ARPU A = 
+DIVIDE(
+    [Revenue A],
+    CALCULATE(
+        DISTINCTCOUNT('public users'[user_id]),
+        'public users'[ab_variant]= "A"
+    )
+)
+  ARPU B = 
+DIVIDE(
+    [Revenue B],
+    CALCULATE(
+        DISTINCTCOUNT('public users'[user_id]),
+        'public users'[ab_variant]= "B"
+    )
+)
+
+- Revenue Uplift  
+  Revenue Uplift = 
+[ARPU B] - [ARPU A]
+
+- Revenue Uplift % 
+  Revenue Uplift % = 
+DIVIDE(
+    [ARPU B] - [ARPU A],
+    [ARPU A]
+)
+
+- Estimated Revenue Impact
+  Estimated Revenue Impact = 
+[Revenue Uplift] * DISTINCTCOUNT('public user_cohort'[user_id])
