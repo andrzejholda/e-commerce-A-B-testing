@@ -1,0 +1,30 @@
+- Cohort Retention
+  Cohort Retention % =
+DIVIDE(
+SUM(cohort_retention[active_users]),
+CALCULATE(
+SUM(cohort_retention[active_users]),
+cohort_retention[cohort_age] = 0
+)
+)
+
+- Active Users
+  Active Users =
+SUM(cohort_retention[active_users])
+
+- Returning Users
+  Returning Users = 
+CALCULATE(
+DISTINCTCOUNT('public events'[user_id]),
+FILTER(
+'public events',
+'public events'[event_type] = "app_open"
+)
+)
+
+- Retention Rate
+  Retention Rate = 
+DIVIDE(
+[Returning Users],
+[Users]
+)
