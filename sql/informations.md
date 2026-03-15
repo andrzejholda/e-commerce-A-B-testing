@@ -55,7 +55,7 @@ This dataset powers:
 - conversion trend analysis
 - drop-off visualization
 
-#### 02_user_funnel.sql — User-Level Funnel Model
+#### 02_user_funnel_model.sql — User-Level Funnel Model
 ##### Purpose
 
 Transform event-level tracking data into a user-level behavioral model representing whether a user reached each stage of the funnel.
@@ -93,7 +93,7 @@ This model supports:
 - revenue segmentation by country and device
 - monetization comparison across experiment variants
 
-#### 01_user_revenue.sql — Revenue Aggregation Layer
+#### 01_revenue_per_user.sql — Revenue Aggregation Layer
 ##### Purpose
 
 Aggregate purchase transactions at the user level to calculate revenue metrics.
@@ -113,7 +113,7 @@ This dataset enables calculation of:
 - ARPU (Average Revenue Per User)
 - ARPPU (Average Revenue Per Paying User)
 
-#### 02_user_metrics.sql — Enriched User Metrics Layer
+#### 02_user_metrics_dataset.sql — Enriched User Metrics Layer
 ##### Purpose
 
 Combine user attributes with monetization metrics to support segmentation analysis.
@@ -148,7 +148,7 @@ This model enables:
 - early churn detection
 - product stickiness evaluation
 
-#### 01_cohort_base.sql — Cohort Assignment
+#### 01_cohort_assignment.sql — Cohort Assignment
 ##### Purpose
 
 Assign each user to a cohort based on their registration month.
@@ -166,7 +166,7 @@ Defines:
 
 This establishes the starting point of the user lifecycle.
 
-#### 02_user_activity.sql — Monthly Activity Layer
+#### 02_user_activity_tracking.sql — Monthly Activity Layer
 ##### Purpose
 
 Track monthly user engagement by identifying the months in which users generated events.
@@ -205,7 +205,7 @@ Example:
 
 This enables lifecycle-based retention analysis.
 
-#### 04_cohort_retention.sql — Retention Aggregation
+#### 04_cohort_retention_dataset.sql — Retention Aggregation
 ##### Purpose
 
 Aggregate active users by cohort and lifecycle stage.
@@ -261,7 +261,7 @@ This dataset supports:
 - conversion comparison
 - revenue uplift analysis
 
-#### 02_ab_conversion.sql — Conversion Analysis
+#### 02_ab_conversion_dataset.sql — Conversion Analysis
 ##### Purpose
 
 Measure conversion performance between experiment variants.
