@@ -221,8 +221,6 @@ e-commerce-A-B-testing/
 │   └── informations.md              ← DAX measures explained
 │
 ├── powerbi/
-│     ├── Patient Retention & Revenue Impact Analysis.pbix
-│     ├── informations.md
 │     ├── 01_product_overwiev.png
 │     ├── 02_funnel_analysis.png
 │     ├── 03_user_retention_cohort_analysis.png
