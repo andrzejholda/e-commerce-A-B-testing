@@ -177,7 +177,7 @@ This allows dynamic filtering using slicers such as:
 ## Power BI Dashboard – Preview
 
 ### 1. Product Overview
-![Overview](powerbi/01_product_overwiev.png)
+![Overview](powerbi/01_product_overview.png)
 
 ### 2. Funnel Analysis
 ![Churn](powerbi/02_funnel_analysis.png)
