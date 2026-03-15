@@ -177,19 +177,19 @@ This allows dynamic filtering using slicers such as:
 ## Power BI Dashboard – Preview
 
 ### 1. Product Overview
-![Overview]()
+![Overview](powerbi/01_product_overwiev.png)
 
 ### 2. Funnel Analysis
-![Churn]()
+![Churn](powerbi/02_funnel_analysis.png)
 
 ### 3. User Retention / Cohort Analysis
-![Campaign]()
+![Campaign](powerbi/03_user_retention_cohort_analysis.png)
 
 ### 4. A/B Test Analyst
-![Campaign]()
+![Campaign](powerbi/04_ab_test_analysis.png)
 
 ### 5. Business Insights & Recommendations
-![Insights]()
+![Insights](powerbi/05_business_insight.png)
 
 
 ## Project Structure
@@ -200,13 +200,16 @@ e-commerce-A-B-testing/
 ├── README.md                  ← Project overview (for recruiters)
 │
 ├── sql/
-│   ├── 01_base_tables.sql
-│   ├── 02_monthly_aggregation.sql
-│   ├── 03_churn_identification.sql
-│   ├── 04_cohort_base.sql
-│   ├── 05_cohort_activity.sql
-│   ├── 06_cohort_age.sql
-│   ├── 07_cohort_retention.sql
+│   ├── 01_funnel_events.sql
+│   ├── 02_user_funnel_model.sql
+│   ├── 03_revenue_per_user.sql
+│   ├── 04_user_metrics_dataset.sql
+│   ├── 05_cohort_assignment.sql
+│   ├── 06_user_activity_tracking.sql
+│   ├── 07_cohort_activity.sql
+│   ├── 08_cohort_retention_dataset.sql
+│   ├── 09_ab_test_summary.sql
+│   ├── 10_conversion_dataset.sql
 │   └── informations.md              ← SQL logic explained
 │
 ├── dax/
@@ -219,12 +222,11 @@ e-commerce-A-B-testing/
 ├── powerbi/
 │     ├── Patient Retention & Revenue Impact Analysis.pbix
 │     ├── informations.md
-│     └── dashboard_screenshot/
-│            ├── 01_overview.png
-│            ├── 02_churn_analysis.png
-│            ├── 03_cohort_analysis.png
-│            ├── 04_sms_campaign_simulation.png
-│            └── 05_insights.png
+│     ├── 01_product_overwiev.png
+│     ├── 02_funnel_analysis.png
+│     ├── 03_user_retention_cohort_analysis.png
+│     ├── 04_ab_test_analysis.png
+│     └── 05_business_insights.png
 │
 ├── insights/
 │   └── insights_and_recommendations.md
